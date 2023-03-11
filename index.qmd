@@ -1,0 +1,53 @@
+---
+author: Michael DeCrescenzo
+categories: [code, latex]
+title: |
+    The Mandelbrot Set with Iterative and Recursive Approaches
+# excerpt: |
+#     A blogdown website is more like a combination of modular components that are better managed independently, each component with its own repository.
+#     These modular components _come together_ at the nexus of the website, but the components do not _belong to_ the website.
+date: "2023-03-10"
+knitr:
+    opts_chunk:
+        collapse: true
+        eval: false
+draft: false
+# image: "eq.png"
+---
+
+# Overview
+
+One fun lessons in the [Structure and Interpretation of Computer Programs](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html)[^sicp] is the translation of functions between _iterative_ and _recursive_ approaches.
+Take raising a number to a particular (integer) power.
+We could implement such a procedure with iterative multiplication using a loop...
+
+```{r}
+# this won't work for every p
+pow_iter = function(x, p) { 
+    if (p == 1) { return(x) }
+    result = x
+    for (i in 2:p) {
+       result = result * x 
+    } 
+    return(result)
+}
+```
+
+... or as a recursive procedure that accumulates a tree of calls to a `square` function.
+
+```{r}
+pow_rec = function(x, p) {
+    if (p == 1) { return(x) }
+    x * pow_rec(x, p - 1)
+}
+```
+
+
+
+
+[^sicp]: A classic programming book. 
+You can read it online for free as [HTML](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book.html) or as a [PDF](https://web.mit.edu/6.001/6.037/sicp.pdf))
+
+
+
+
