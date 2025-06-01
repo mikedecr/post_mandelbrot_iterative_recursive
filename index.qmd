@@ -74,7 +74,8 @@ I have only seen them implement an iterative approach with a loop.
 But the Mandelbrot set is mathematically defined with recursion!
 So we ought to be able to implement a recursive approach that is, hopefully, more succinct and slick.[^graphics]
 
-[^pkg]: There is even an R package called [`mandelbrot`](https://cran.r-project.org/web/packages/mandelbrot/index.html) which although it dispatches the implementation to C, also uses [iteration](https://github.com/blmoore/mandelbrot/blob/fdb7b75294317f2111b45b9bea05c04251750c64/src/mandelbrot.c#L40-L51).
+[^pkg]: There is even an R package called [`mandelbrot`](https://cran.r-project.org/web/packages/mandelbrot/index.html), which dispatches the implementation to C.
+It also uses [iteration](https://github.com/blmoore/mandelbrot/blob/fdb7b75294317f2111b45b9bea05c04251750c64/src/mandelbrot.c#L40-L51), but that makes sense for production C code.
 
 [^graphics]: We will also use newer plotting tools to visualize the results---`ggplot` instead of `graphics::image` like the older posts.
 
