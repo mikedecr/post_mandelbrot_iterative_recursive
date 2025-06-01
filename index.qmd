@@ -67,10 +67,9 @@ pow_rec(7, 6) == example
 
 **This blog post will employ this duality between recursion and iteration to create images of the [_Mandelbrot set_](https://en.wikipedia.org/wiki/Mandelbrot_set) using R.**
 Although there are 
-[plenty](https://www.r-bloggers.com/2014/12/the-mandelbrot-set-in-r/)
-of [other](https://www.dandelbrot.com/post/the-mandelbrot-set-in-r/)
-blog [posts](https://cerebralmastication.com/2009/02/mandelbrot-set-in-r/)
-that visualize the Mandelbrot set in R,[^pkg]
+[plenty](https://web.archive.org/web/20241202193942/https://www.r-bloggers.com/2014/12/the-mandelbrot-set-in-r/)
+of [other](https://web.archive.org/web/20240204234247/https://www.dandelbrot.com/post/the-mandelbrot-set-in-r/)
+blog posts that visualize the Mandelbrot set in R,[^pkg]
 I have only seen them implement an iterative approach with a loop.
 But the Mandelbrot set is mathematically defined with recursion!
 So we ought to be able to implement a recursive approach that is, hopefully, more succinct and slick.[^graphics]
