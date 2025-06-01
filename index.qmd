@@ -4,16 +4,14 @@ author: Michael DeCrescenzo
 categories: [code, r]
 title: |
     The Mandelbrot set, in R, with recursion instead of iteration
-# excerpt: |
-#     A blogdown website is more like a combination of modular components that are better managed independently, each component with its own repository.
-#     These modular components _come together_ at the nexus of the website, but the components do not _belong to_ the website.
+# excerpt:
 date: "2023-03-11"
 knitr:
     opts_chunk:
         collapse: true
         eval: false
 draft: false
-# image: "eq.png"
+# image:
 ---
 
 # Intro: Iteration and Recursion
