@@ -4,3 +4,4 @@ index_files/libs
 # pixi environments
 .pixi
 *.egg-info
+.undo
