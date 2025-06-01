@@ -1,2 +1,6 @@
 index_files/figure-html
 index_files/libs
+
+# pixi environments
+.pixi
+*.egg-info
